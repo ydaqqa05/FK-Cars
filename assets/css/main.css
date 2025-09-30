@@ -1,6 +1,13 @@
 :root{
     --primaryColor:#000000;
-    
+    --text-color:#fff;
+    --secondaryColor:#E4E4E7;
+}
+body{
+    background-color: var(--primaryColor);
+}
+.alert{
+    margin-bottom: 0;
 }
 .alert-warning,.alert{
     background-color: var(--primaryColor);
@@ -33,4 +40,71 @@
     .alert-text{
      font-size: 8px;
     }
+}
+.navbar-brand img{
+    width: 150px;
+    height: 80px;
+}
+.nav-link{
+    color: var(--text-color);
+    font-size: 18px;
+}
+.nav-icons img{
+    width: 28px;
+    height: 28px;
+}  .navbar form{
+    background-color: var(--secondaryColor);
+    border: 3px solid #E7E6EF;
+    border-radius: 62px;
+    display: flex;
+    padding: 0 11px;
+  } 
+  form .btn{
+    background-color: var(--secondaryColor) ;
+    border: none ;
+  
+  }
+  .form-control{
+    border: none ;
+    background-color: var(--secondaryColor);
+  }
+  .nav-icons{
+    padding: 0 48px;
+  }
+  .form-control:focus{
+    border: none;
+    outline: none;
+box-shadow: none;
+background-color: var(--secondaryColor);
+  }
+  @media screen and (max-width:457px) {
+    .navbar-brand img{
+        width: 120px;
+        height: 50px;
+    }.nav-icons img,.navbar-toggler-icon,.navbar-toggler{
+        width: 20px;
+        height: 20px;
+    } 
+  }.navbar-toggler {
+    padding: 0.25rem;   
+    border: none;      
+    outline: none;      
+  }
+  
+  .navbar-toggler-icon {
+    width: 1.5rem;  
+    height: 1.5rem;
+    background-size: contain;
+  }.navbar-toggler-icon {
+    background-image: none; /* Remove default icon */
+}
+
+.navbar-toggler {
+    border-color: transparent; /* Optional: removes border */
+}
+
+.navbar-toggler-icon::before {
+    content: "\2630"; /* Unicode for hamburger menu ☰ */
+    color: white;
+    font-size: 1.5rem;
 }
