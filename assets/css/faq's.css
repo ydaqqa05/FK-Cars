@@ -1,0 +1,59 @@
+
+:root {
+    --primaryColor: #000000;
+    --text-color: #fff;
+    --secondaryColor: #E4E4E7;
+    --blue-200: #93C5FD;
+    --mainFont: "Plus Jakarta Sans", sans-serif;
+}
+.faqs-hero{
+background-image: url(../img/public/bmw-secondry.webp);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1{
+    color:var(--text-color) ;
+    font-size: 50px;
+  
+}.breadcrumb a,.breadcrumb li{
+    color: var(--text-color);
+}
+.btn-outline-dark {
+    border: 2px solid var(--primaryColor) ;
+    color: var(--text-color);         
+  }
+  
+  .btn-outline-dark .breadcrumb,
+  .btn-outline-dark .breadcrumb a,
+  .btn-outline-dark .breadcrumb-item,
+  .btn-outline-dark .breadcrumb-item::before {
+    color: var(--text-color) ;           
+  }
+  .btn-outline-dark:hover {
+    border: var(--secondaryColor);
+    color: var(--primaryColor);      
+    background-color: var(--secondaryColor);   
+  }
+   .btn-outline-dark:hover .btn-outline-dark .breadcrumb,
+   .btn-outline-dark .breadcrumb a,
+   .btn-outline-dark .breadcrumb-item,
+   .btn-outline-dark .breadcrumb-item::before{
+  
+    color: var(--primaryColor);      
+
+  }
+  @media screen and (max-width:1186px) 
+  {
+    .btn-outline-dark {
+    border: 2px solid var(--secondaryColor) ;
+    color: var(--primaryColor);    
+    background-color: var(--secondaryColor);     
+  }
+  .btn-outline-dark .breadcrumb,
+  .btn-outline-dark .breadcrumb a,
+  .btn-outline-dark .breadcrumb-item,
+  .btn-outline-dark .breadcrumb-item::before {
+    color: var(--primaryColor) ;           
+  }
+  }

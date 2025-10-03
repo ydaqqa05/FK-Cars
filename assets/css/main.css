@@ -166,7 +166,8 @@ form .btn {
 
   }
   .white-space{
-    padding-top: 80px;
+    padding: 80px 0;
+   
   }
   .subscribe{
     background-color: var(--primaryColor);
@@ -175,19 +176,81 @@ form .btn {
     left: 48px;
     width: 90%;
     border-radius: 12px;
-      padding: 20px;
+    padding:20px;
+ 
   }
 
   .sub-left span {
     color: var(--blue-200);
  
 }
+@media screen and (max-width:989px) {
+
+
+    .subscribe{
+        width: 80%;
+        top:20px;
+        left: 10%;
+   padding: 10px;
+    }
+}
+@media screen and (max-width:769px) {
+    .subscribe{
+        width: 80%;
+        top:50px;
+        left: 10%;
+   padding: 10px;
+    }
+    .white-space{
+      padding-top: 100px 0;
+    }
+    .sub-left h2{
+        font-size: 20px !important;
+       }
+      
+}
+@media screen and (max-width:426px) {
+    .subscribe{
+        width: 95%;
+        top:20px;
+        left: 10px;
+   padding: 10px;
+    }
+    .white-space{
+      padding-top: 100px 0;
+    }
+    .sub-left h2{
+        font-size: 20px !important;
+       }
+       .sub-right .form-control{
+        font-size: 12px;
+       }
+      
+}
+@media screen and (max-width:376px) {
+
+
+       .sub-right .form-control{
+        font-size: 10px;
+       }
+      .sub-right button{
+        font-size: 15px;
+      }
+}
+@media screen and (max-width:321px) {
+
+    .sub-right .form-control{
+     font-size: 8px;
+    }
+   .sub-right button{
+     font-size: 10px;
+   }
+}
 .sub-right form,.sub-right button{
     background-color: var(--secondaryColor);
      border: 2px solid #E7E6EF;
     border-radius: 62px;
 }
-
 .footer-content{
     background-color: #E4E4E7;
 }
