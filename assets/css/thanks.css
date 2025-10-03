@@ -1,0 +1,28 @@
+:root {
+    --primaryColor: #000000;
+    --text-color: #fff;
+    --secondaryColor: #E4E4E7;
+    --blue-200: #93C5FD;
+    --mainFont: "Plus Jakarta Sans", sans-serif;
+}
+body{
+    color: var(--text-color);
+}
+.thanks-hero{
+    background-image: url(../img/public/BMW.webp);   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+button a{
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+button:hover a{
+    background-color: var(--text-color);
+    color: var(--primaryColor);
+}
+.hero-description{
+    max-width: 681px;  
+   
+    line-height: 1.50;
+}

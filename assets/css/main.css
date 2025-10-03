@@ -8,8 +8,15 @@
 
 body {
     background-color: var(--primaryColor);
+    font-family: var(--mainFont);
+  
 }
+a{
+    text-decoration: none;
+    color: var(--primaryColor);
+    font-size: 14px;
 
+}
 .alert {
     margin-bottom: 0;
 }
@@ -55,7 +62,7 @@ body {
     }
 }
 
-.navbar-brand img {
+.navbar-brand img,.footer-logo img {
     width: 150px;
     height: 80px;
 }
@@ -101,7 +108,7 @@ form .btn {
 }
 
 @media screen and (max-width:457px) {
-    .navbar-brand img {
+    .navbar-brand img,.footer-logo img {
         width: 120px;
         height: 50px;
     }
@@ -131,7 +138,7 @@ form .btn {
 
 .navbar-toggler {
     border-color: transparent;
-  /* Optional: removes border */
+
 }
 
 .navbar-toggler-icon::before {
@@ -141,7 +148,7 @@ form .btn {
 }
 
 .hero {
-    background-image: url(./../img/public/Content.webp);
+    background-image: url(../img/public/Content.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -153,7 +160,42 @@ form .btn {
 .hero-content span {
     color: var(--blue-200);
  
-}.hero p {
+}
+.hero p {
     max-width: 705px;
 
   }
+  .white-space{
+    padding-top: 80px;
+  }
+  .subscribe{
+    background-color: var(--primaryColor);
+    color: var(--text-color);
+    top: 32px;
+    left: 48px;
+    width: 90%;
+    border-radius: 12px;
+      padding: 20px;
+  }
+
+  .sub-left span {
+    color: var(--blue-200);
+ 
+}
+.sub-right form,.sub-right button{
+    background-color: var(--secondaryColor);
+     border: 2px solid #E7E6EF;
+    border-radius: 62px;
+}
+
+.footer-content{
+    background-color: #E4E4E7;
+}
+.social-icons{
+    gap: 37.5px;
+}
+.copy-write{
+    border-top:solid 1px #A1A1AA ;
+    padding-bottom: 9px ;
+    padding-top: 37px;
+}
