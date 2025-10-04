@@ -85,7 +85,7 @@ a{
     padding: 0 11px;
 }
 
-form .btn {
+form .search-btn {
     background-color: var(--secondaryColor);
     border: none;
 

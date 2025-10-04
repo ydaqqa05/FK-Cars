@@ -1,0 +1,48 @@
+:root {
+    --primaryColor: #000000;
+    --text-color: #fff;
+    --secondaryColor: #E4E4E7;
+    --blue-200: #93C5FD;
+    --text-secondary: #A1A1AA;
+    --mainFont: "Plus Jakarta Sans", sans-serif;
+}
+
+.info .number,
+.info .email-info,
+.info .location {
+    color: var(--text-secondary)
+}
+
+.info {
+    border-bottom: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+}
+
+.in-touch {
+    background-color: var(--text-secondary);
+}
+
+.message {
+    border: 1px solid var(--text-color);
+}
+
+input {
+    background-color: transparent;
+}
+
+.message-btn {
+    background-color: transparent;
+}
+.inputs input{
+    border: none;
+    border: 1px solid var(--text-secondary);
+}
+form .form-control {
+    background-color: transparent;
+    border: 1px solid var(--text-secondary);
+}
+ .form-control::placeholder {
+    color: #999999; /* light gray */
+  }
+ 
