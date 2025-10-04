@@ -7,6 +7,8 @@
     --mainFont: "Plus Jakarta Sans", sans-serif;
 }
 .faqs-hero{
+  height: 75vh;
+  
 background-image: url(../img/public/bmw-secondry.webp);
 background-position: center;
 background-repeat: no-repeat;
