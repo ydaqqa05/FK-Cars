@@ -172,7 +172,7 @@ form .btn {
   .subscribe{
     background-color: var(--primaryColor);
     color: var(--text-color);
-    top: 32px;
+    top: 50px;
     left: 48px;
     width: 90%;
     border-radius: 12px;
@@ -197,7 +197,7 @@ form .btn {
 @media screen and (max-width:769px) {
     .subscribe{
         width: 80%;
-        top:50px;
+        top:25px;
         left: 10%;
    padding: 10px;
     }
