@@ -43,6 +43,6 @@ form .form-control {
     border: 1px solid var(--text-secondary);
 }
  .form-control::placeholder {
-    color: #999999; /* light gray */
+    color: var(--text-secondary); /* light gray */
   }
  
