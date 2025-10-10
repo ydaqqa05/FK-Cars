@@ -1,0 +1,112 @@
+:root {
+    --primaryColor: #000000;
+    --text-color: #fff;
+    --secondaryColor: #E4E4E7;
+    --blue-200: #93C5FD;
+    --text-secondary: #A1A1AA;
+    --mainFont: "Plus Jakarta Sans", sans-serif;
+  --orange-text:#FB923C;
+}
+.profile{
+    min-height: 100vh;
+}
+.profile-info-left {
+    border-color: var(--text-secondary);
+}
+
+.profile-desc{
+    color: var(--secondaryColor);
+    font-size: 18px;
+}
+.joined,.history-desc{
+    color: var(--text-secondary);
+}
+@media screen and (max-width:376px) {
+    .order{
+        font-size: 12px;
+    }
+}
+.car-info{
+    color: var(--blue-200);
+}
+
+.whislist {
+    width: 100%;
+    overflow-x: auto;
+  }
+.whislist .cards {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap; 
+   
+  }
+.card{
+    background-color: transparent;
+}
+.heart-icon {
+    transition: all 0.3s ease-in-out; 
+    cursor: pointer;
+  }
+  
+  .heart-icon:hover {
+    font-weight: 900; 
+    transform: scale(1.2);
+  }
+.cards::-webkit-scrollbar {
+    height: 4px;            
+  }
+  
+  .cards::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .cards::-webkit-scrollbar-thumb {
+    background: transparent;       
+    border-radius: 4px;     
+  }
+  
+  .cards::-webkit-scrollbar-thumb:hover {
+    background: #555;       
+  }
+@media screen and (max-width:1400px) {
+    .cards{
+        gap: 0.5rem;
+    }
+    .cards .card{
+        
+        flex: 0 0  auto;
+    }
+    
+}
+
+@media screen and (max-width:390px) {
+    .cards{
+        gap: 0.5rem;
+    }
+    .cards .card{
+        
+        flex: 0 0  auto;
+    }
+    
+}
+@media screen and (max-width:389px) {
+    .cards{
+        gap: 0.5rem;
+    }
+    .cards .card{
+        
+        flex: 0 0  90%;
+    }
+    
+}
+  
+.card img{
+    background-color: var(--secondaryColor);
+}
+
+.card p{
+    color: var(--orange-text);
+}

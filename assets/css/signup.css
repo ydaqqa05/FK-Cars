@@ -9,7 +9,7 @@
 
 .signup-hero {
     background-image: url(../img/public/login-car.webp);
-    min-height: 75vh;
+    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
