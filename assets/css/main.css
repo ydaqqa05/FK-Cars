@@ -17,6 +17,12 @@ a{
     font-size: 14px;
 
 }
+.btn a{
+    color: var(--text-color);
+}
+.btn:hover a{
+    color: var(--primaryColor);
+}
 .alert {
     margin-bottom: 0;
 }
