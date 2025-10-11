@@ -24,7 +24,7 @@ h1 {
 .btn-outline-dark .breadcrumb a,
 .btn-outline-dark .breadcrumb-item,
 .btn-outline-dark .breadcrumb-item::before {
-  color: var(--text-color);
+  color: var(--primaryColor);
 }
 
 .btn-outline-dark {

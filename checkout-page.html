@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FK Cars</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<link rel="stylesheet" href="./assets/css/main.css">
+    <title>FK Cars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/contactus.css">
+    <link rel="stylesheet" href="./assets/css/faq's.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark py-0   ">
 
         <div class="container-fluid d-flex justify-content-between align-items-center ">
-            
+
             <a class="navbar-brand" href="./index.html"><img src="./assets/img/public/car logo.webp" alt="car logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +61,165 @@
         </div>
 
     </nav>
+    <main>
+        <section class="checkout-hero faqs-hero">
+            <div class="container-fluid pt-4 ps-5">
+                <h1 class="fw-bold mb-3">Checkout</h1>
+                <button type="button" class="btn btn-outline-dark fw-bold ">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb m-0 ">
+                            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                            <li class="breadcrumb-item " aria-current="page">Checkout</li>
+                        </ol>
+                    </nav>
+                </button>
+            </div>
+        </section>
+        <section class="checkout p-5">
+            <div class="container text-white">
+                <div class="row gx-4  align-items-start ">
+                    <div class="checkout-left   col-lg-6   ">
+
+                        <div class="contact-details border rounded-2 mb-4">
+                            <div class="in-touch px-3 pt-1  rounded-top-2 text-center mb-2 ">
+                                <h4>Contact Details</h4>
+                            </div>
+                            <form class="inputs d-flex flex-column   gap-3 mb-3  px-3">
+                                <div class="row  ">
+                                    <div class=" col-6">
+                                        <input class="rounded-2 p-2 w-100 " type="text" placeholder="Full Name">
+                                    </div>
+                                    <div class=" col-6 ">
+                                        <input class="rounded-2 p-2 w-100" type="text" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <input class="rounded-2 p-2 w-100" type="text" placeholder="Company">
+                                <input class="rounded-2 p-2 w-100" type="text" placeholder="Address">
+                                <div class="row ">
+                                    <div class=" col-6">
+                                        <input class="rounded-2 p-2 w-100" type="text" placeholder="Town / City">
+                                    </div>
+                                    <div class="col-6">
+                                        <input class="rounded-2 p-2 w-100 zip-code" type="text" placeholder="Postal / Zip Code">
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class=" col-6">
+                                        <input class="rounded-2 p-2 w-100" type="text" placeholder="Phone">
+                                    </div>
+                                    <div class=" col-6">
+                                        <input class="rounded-2 p-2 w-100" type="text" placeholder="Email">
+                                    </div>
+
+
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="booking-details border rounded-2 mb-4 px">
+                            <div class="in-touch px-3 pt-1  rounded-top-2 text-center mb-2">
+                                <h3>Booking Details</h3>
+                            </div>
+                            <form class="inputs d-flex flex-column   gap-3 mb-3  px-3">
+                                <div class="row  ">
+                                    <div class=" col-6">
+                                        <input class="rounded-2 p-2 w-100 " type="text" placeholder="From Address">
+                                    </div>
+                                    <div class=" col-6 ">
+                                        <input class="rounded-2 p-2 w-100" type="text" placeholder="To Address">
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class=" col-6">
+                                        <input class="rounded-2 p-2 w-100" type="text" placeholder="Pickup Date">
+                                    </div>
+                                    <div class="col-6">
+                                        <input class="rounded-2 p-2 w-100" type="text" placeholder="Pickup Time">
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class=" col-6">
+                                        <input class="rounded-2 p-2 w-100" type="text" placeholder="Dropoff Date">
+                                    </div>
+                                    <div class=" col-6">
+                                        <input class="rounded-2 p-2 w-100" type="text" placeholder="Dropoff Time">
+                                    </div>
+                                </div>
+                                <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                            </form>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="checkout-right col-lg-6">
+                        <div class="payment-method border rounded-2 mb-4 px-3 gap-2">
+                            <h2 class="text-center fw-bold my-2">Payment Method</h2>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input  bg-transparent" type="radio" name="radioDefault"
+                                    id="radioDefault1">
+                                <label class="form-check-label fs-5" for="radioDefault1">
+                                    DIRECT BANK TRANSFER
+                                </label>
+                                <p class="text-secondary">Make your payment directly into our bank account. Please use
+                                    your Order ID as the payment reference. Your order won’t be shipped until the funds
+                                    have our account..
+                                </p>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input bg-transparent" type="radio" name="radioDefault"
+                                    id="radioDefault2" checked>
+                                <label class="form-check-label fs-5" for="radioDefault2">
+                                    CASH ON DELIVERY
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input bg-transparent" type="radio" name="radioDefault"
+                                    id="radioDefault2" checked>
+                                <label class="form-check-label fs-5" for="radioDefault2">
+                                    GOOGLE PAY
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-total border rounded-2 mb-4 px-3 py-2">
+                            <h2 class="text-center fw-bold mb-3">Payment Method</h2>
+                            <div class="d-flex flex-column  text-secondary fs-6 fw-bold gap-2 ">
+                                <div class="d-flex justify-content-between">
+                                    <p>Sub Total</p>
+                                    <p>$100,000.00</p>
+                                </div>
+                                <div class="d-flex justify-content-between calculation">
+                                    <p>Delivery Fee</p>
+                                    <p>$500.00</p>
+                                </div>
+                                <div class="d-flex justify-content-between calculation">
+                                    <p>Discount</p>
+                                    <p>$250.00</p>
+                                </div>
+                                <div class="d-flex justify-content-between line border-secondary border-bottom mb-2 pb-1">
+                                    <p>Tax</p>
+                                    <p>$1000.00</p>
+                                </div>
+                                <div class="d-flex justify-content-between  ">
+                                    <p>Total</p>
+                                    <p>$101,750.00</p>
+                                </div>
+                                <button type="button" class="btn btn-outline-light message-btn py-2 mb-2 text-white"><a href="./thanks.html"> Place Order</a>
+                                   </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
     <footer class="footer vh-100">
 
         <div class="white-space bg-light w-100 h-25 position-relative">
@@ -62,24 +227,24 @@
                 <div class="container">
                     <div class="row justify-content-center align-items-center flex-wrap ">
                         <div class="sub-left  col-lg-6">
-                            <h2 class="fw-bold fs-3 ">STAY <span>UPTO DATE ABOUT</span> OUR LATEST <span>OFFERS</span> </h2>
+                            <h2 class="fw-bold fs-3 ">STAY <span>UPTO DATE ABOUT</span> OUR LATEST <span>OFFERS</span>
+                            </h2>
                         </div>
                         <div class="sub-right col-lg-6 d-flex flex-column  align-items-center  ">
-                            
-                                <form class=" d-flex my-2 mx-3 px-4 w-75  ">
-                                 <img src="./assets/img/logo/email-icon.svg"
-                                            alt="search">
-                                   
-                                    <input class="form-control  border-0 rounded-0 text-center" type="email" placeholder="Enter your email address"
-                                        aria-label="Search">
-                    
-                                </form>
-                    
-                              
-                                   <button class="btn w-75  ">Subscribe to Newsletter</button>
-                    
-                           
-                    
+
+                            <form class=" d-flex my-2 mx-3 px-4 w-75  ">
+                                <img src="./assets/img/logo/email-icon.svg" alt="search">
+
+                                <input class="form-control  border-0 rounded-0 text-center" type="email"
+                                    placeholder="Enter your email address" aria-label="Search">
+
+                            </form>
+
+
+                            <button class="btn w-75  ">Subscribe to Newsletter</button>
+
+
+
                         </div>
                     </div>
 
@@ -169,7 +334,8 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
