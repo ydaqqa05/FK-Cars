@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FK Cars</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<link rel="stylesheet" href="./assets/css/main.css">
+    <title>FK Cars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="stylesheet" href="./assets/css/shopping-cart.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark py-0   ">
 
         <div class="container-fluid d-flex justify-content-between align-items-center ">
-            
+
             <a class="navbar-brand" href="./index.html"><img src="./assets/img/public/car logo.webp" alt="car logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +61,124 @@
         </div>
 
     </nav>
+    <main>
+        <section class="shop-cart-hero py-5">
+            <div class="container">
+                <div class=" text-white">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb m-0" style="color: #A1A1AA;">
+                            <li class="breadcrumb-item  "><a href="./index.html">Home</a></li>
+                            <li class="breadcrumb-item " aria-current="page">Cart</li>
+                        </ol>
+                    </nav>
+                    <h2>YOUR CART</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="cart-left border border-1 border-white rounded-4  text-white px-4 py-3 ">
+                            <div
+                                class="product d-flex border-bottom pb-4 gap-3 flex-sm-nowrap align-items-center justify-content-center flex-wrap">
+                                <div class="img bg-light  w-100 d-flex justify-content-center"><img
+                                        src="./assets/img/cars/Nissan GT - R.webp" alt="Nissan GT - R"></div>
+                                <div class="product-desc  w-100 d-flex flex-column ">
+                                    <div class="d-flex justify-content-between align-items-center car-name mb-1 ">
+                                        <h3>Nissan GT - R</h3><i class='bx  bx-trash'></i>
+                                    </div>
+                                    <p class="type mb-1">Sport</p>
+                                    <p class="mb-1">Color: Gray</p>
+                                    <div class="d-flex justify-content-between align-items-center mb-1 ">
+                                        <h4>$88K</h4><button type="button" class="btn btn-outline-light message-btn   ">
+                                            - 1 + </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div
+                                class="product d-flex border-bottom pb-4 gap-3 pt-3 flex-sm-nowrap align-items-center justify-content-center flex-wrap">
+                                <div class="img bg-light w-100 d-flex justify-content-center "><img
+                                        src="./assets/img/cars/CR  - V.webp" alt="CR  - V"></div>
+                                <div class="product-desc  w-100 d-flex flex-column ">
+                                    <div class="d-flex justify-content-between align-items-center car-name mb-1">
+                                        <h3>CR - V</h3><i class='bx  bx-trash'></i>
+                                    </div>
+                                    <p class="type mb-1">SUV</p>
+                                    <p class="mb-1">Color: Brown</p>
+                                    <div class="d-flex justify-content-between align-items-center mb-1 ">
+                                        <h4>$80K</h4><button type="button" class="btn btn-outline-light message-btn   ">
+                                            - 1 + </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div
+                                class="product d-flex  pb-4 gap-3 pt-3 flex-sm-nowrap align-items-center justify-content-center flex-wrap">
+                                <div class="img bg-light w-100 d-flex justify-content-center"><img
+                                        src="./assets/img/cars/New MG ZS.webp" alt="New MG ZS"></div>
+                                <div class="product-desc  w-100 d-flex flex-column ">
+                                    <div class="d-flex justify-content-between align-items-center car-name mb-1">
+                                        <h3>New MG ZS</h3><i class='bx  bx-trash'></i>
+                                    </div>
+                                    <p class="type mb-1">SUV</p>
+                                    <p class="mb-1">Color: Off-White</p>
+                                    <div class="d-flex justify-content-between align-items-center mb-1 ">
+                                        <h4>$80K</h4><button type="button" class="btn btn-outline-light message-btn   ">
+                                            - 1 + </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="cart-right border border-1 border-white rounded-4  text-white px-4 py-3">
+                            <h4>Order Summary</h4>
+
+                            <div class="d-flex flex-column  text-secondary fs-6  gap-2 pt-1">
+                                <div class="d-flex justify-content-between">
+                                    <p>Subtotal</p>
+                                    <p>$248K</p>
+                                </div>
+                                <div class="d-flex justify-content-between calculation">
+                                    <p>Discount (- 20%)</p>
+                                    <p>$3K</p>
+                                </div>
+
+                                <div
+                                    class="d-flex justify-content-between line border-secondary border-bottom mb-2 pb-1">
+                                    <p>Shipping Charges</p>
+                                    <p>$5K</p>
+                                </div>
+                                <div class="d-flex justify-content-between  ">
+                                    <p>Total</p>
+                                    <p>$250K</p>
+                                </div>
+                                <div class="promo-code d-flex justify-content-between align-items-center ">
+                                    <form class="d-flex my-2 mx-3 w-100 ">
+                                        <img src="./assets/img/logo/price-tag.svg" alt="tag price">
+                                        <input class="form-control  border-0 rounded-0 " type="search"
+                                            placeholder="Add promo code" aria-label="Search">
+
+                                    </form>
+                                    <button type="button"
+                                        class="btn btn-outline-light message-btn px-3 py-2 apply-btn">Apply</button>
+                                </div>
+                                <div class="buttons d-flex align-items-center justify-content-around "> 
+                                    <button type="button" class="btn btn-outline-light message-btn   px-4">
+                                    ← Return to Shop Page   </button>
+                                    <button type="button" class="btn  btn-outline-light message-btn checkout-btn  px-4">
+                                        Go to Checkout →   </button>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer vh-100">
 
         <div class="white-space bg-light w-100 h-25 position-relative">
@@ -62,24 +186,24 @@
                 <div class="container">
                     <div class="row justify-content-center align-items-center flex-wrap ">
                         <div class="sub-left  col-lg-6">
-                            <h2 class="fw-bold fs-3 ">STAY <span>UPTO DATE ABOUT</span> OUR LATEST <span>OFFERS</span> </h2>
+                            <h2 class="fw-bold fs-3 ">STAY <span>UPTO DATE ABOUT</span> OUR LATEST <span>OFFERS</span>
+                            </h2>
                         </div>
                         <div class="sub-right col-lg-6 d-flex flex-column  align-items-center  ">
-                            
-                                <form class=" d-flex my-2 mx-3 px-4 w-75  ">
-                                 <img src="./assets/img/logo/email-icon.svg"
-                                            alt="search">
-                                   
-                                    <input class="form-control  border-0 rounded-0 text-center" type="email" placeholder="Enter your email address"
-                                        aria-label="Search">
-                    
-                                </form>
-                    
-                              
-                                   <button class="btn w-75  ">Subscribe to Newsletter</button>
-                    
-                           
-                    
+
+                            <form class=" d-flex my-2 mx-3 px-4 w-75  ">
+                                <img src="./assets/img/logo/email-icon.svg" alt="search">
+
+                                <input class="form-control  border-0 rounded-0 text-center" type="email"
+                                    placeholder="Enter your email address" aria-label="Search">
+
+                            </form>
+
+
+                            <button class="btn w-75  ">Subscribe to Newsletter</button>
+
+
+
                         </div>
                     </div>
 
@@ -169,7 +293,8 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
