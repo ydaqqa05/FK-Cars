@@ -88,12 +88,47 @@
 .car-overview{
   color: var(--text-secondary);
 }
-.desc-right .email{
+.desc-right .email, .buttons .review{
   color: var(--text-color);
   background-color:transparent;
   }
-.desc-right .email:hover{
+.desc-right .email:hover,.buttons .review:hover{
 
 color: var(--primaryColor);
 background-color: var(--text-color);
+}
+.unactive{
+  color: var(--text-secondary);
+}
+.head-name{
+  font-size: 48px;
+}
+@media screen and (max-width:768px) {
+  .review-head .head-name{
+    font-size:30px ;
+  }
+  .review-head .buttons{
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .head-name {
+    font-size: 1.25rem;
+  }
+  .buttons .btn {
+    font-size: 0.85rem;
+    padding: 4px 10px;
+  }
+}
+@media (max-width: 428px) {
+  
+  .buttons  {
+    width: 100%;
+  }
+  .buttons .btn{
+    flex: 1;
+  }
+}
+.card{
+  border-radius: 24px;
 }
