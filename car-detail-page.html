@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FK Cars</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<link rel="stylesheet" href="./assets/css/main.css">
+    <title>FK Cars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/faq's.css">
+    <link rel="stylesheet" href="./assets/css/shopping-cart.css">
+    <link rel="stylesheet" href="./assets/css/car-detail.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark py-0   ">
 
         <div class="container-fluid d-flex justify-content-between align-items-center ">
-            
+
             <a class="navbar-brand" href="./index.html"><img src="./assets/img/public/car logo.webp" alt="car logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +32,7 @@
                         <a class="nav-link" href="./shop-page.html">Shop </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./cars-page.html">Cars</a>
+                        <a class="nav-link" href="./car-detail-page.html">Cars</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contactUs.html">Contact Us</a>
@@ -55,6 +62,132 @@
         </div>
 
     </nav>
+
+    <main>
+        <section class="car_detail-hero py-5">
+            <div class="container">
+                <button type="button" class="bg-transparent border-0  pb-4 ">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb m-0 ">
+                            <li class="breadcrumb-item ">Home</li>
+                            <li class="breadcrumb-item " aria-current="#">Shop</li>
+                            <li class="breadcrumb-item text-white" aria-current="page">Cars</li>
+                        </ol>
+                    </nav>
+                </button>
+                <div class="row g-3 align-items-stretch">
+
+                    <div class="col-lg-8 col-12  ">
+                        <img src="./assets/img/public/lamborghini1.webp" alt="front view"
+                            class="img-fluid object-fit-cover rounded-3 w-100 h-100 ">
+                    </div>
+
+                    <div class="col-lg-4 col-12 d-flex flex-lg-column  gap-3 side-back ">
+                        <img src="./assets/img/public/lamborghini2.webp" alt="side view "
+                            class="img-fluid rounded-3 object-fit-cover ">
+                        <img src="./assets/img/public/lamborghini3.webp" alt=" back view"
+                            class="img-fluid rounded-3 object-fit-cover ">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="car-descreiption pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-12">
+                        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+                            <div class="car-name text-white">
+                                <h2 class="m-0 fw-bold">Lamborghini Aventador</h2>
+                                <h3>$169K</h3>
+                            </div>
+                            <div class="button-group d-flex gap-4 pe-4">
+                                <button class="btn btn-light fw-semibold ">Add to Favorite</button>
+                                <button class="btn btn-light fw-semibold">Share</button>
+                            </div>
+
+                        </div>
+                        <div class="stars d-flex gap-1 pb-3 pt-2">
+
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="features d-flex align-items-center gap-5  pb-3 ">
+                            <div class="d-flex gap-1"><img src="./assets/img/logo/calendar.svg" alt="calendar">2025
+                            </div>
+                            <div class="d-flex gap-1"><img src="./assets/img/logo/dashboard-speed.svg"
+                                    alt=" dashboard-speed speedometer">1400 km</div>
+                            <div class="d-flex gap-1"><img src="./assets/img/logo/Car.svg" alt="car">Manual</div>
+                            <div class="d-flex gap-1"><img src="./assets/img/logo/globe.svg" alt="global">GCC Specscs
+                            </div>
+                        </div>
+                        <div class="car-overview ">
+                            <h2 class="py-2 text-white">Car Overview</h2>
+                            <div class="row g-md-5 g-2 ">
+                                <div class="col-lg-6 ">
+                                    <div class="left fs-5 d-flex flex-column ">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>Body Type</p>
+                                            <p>Sports Car</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>Doors</p>
+                                            <p>Two Doors</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>Seating Capacity</p>
+                                            <p>2 Seater</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>Engine Capacity (cc)</p>
+                                            <p>6</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p>Warranty</p>
+                                            <p>Yes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">  
+                                     <div class="right fs-5 d-flex flex-column ">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p>Exterior Color</p>
+                                        <p>Grey</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p>Interior Color</p>
+                                        <p>Black</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p>Fuel Type</p>
+                                        <p>Petrol</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p>Horsepower</p>
+                                        <p>500 - 599 HP</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p>Transmission Type </p>
+                                        <p>Auto</p>
+                                    </div>
+                                </div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12">
+                        <div class="desc-right d-flex flex-column gap-4">
+                            <button class="btn btn-light fw-semibold ">(98)  87654321</button>
+                            <button class="btn btn-outline-light  fw-semibold  email">Test@gmail.com</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer vh-100">
 
         <div class="white-space bg-light w-100 h-25 position-relative">
@@ -62,24 +195,24 @@
                 <div class="container">
                     <div class="row justify-content-center align-items-center flex-wrap ">
                         <div class="sub-left  col-lg-6">
-                            <h2 class="fw-bold fs-3 ">STAY <span>UPTO DATE ABOUT</span> OUR LATEST <span>OFFERS</span> </h2>
+                            <h2 class="fw-bold fs-3 ">STAY <span>UPTO DATE ABOUT</span> OUR LATEST <span>OFFERS</span>
+                            </h2>
                         </div>
                         <div class="sub-right col-lg-6 d-flex flex-column  align-items-center  ">
-                            
-                                <form class=" d-flex my-2 mx-3 px-4 w-75  ">
-                                 <img src="./assets/img/logo/email-icon.svg"
-                                            alt="search">
-                                   
-                                    <input class="form-control  border-0 rounded-0 text-center" type="email" placeholder="Enter your email address"
-                                        aria-label="Search">
-                    
-                                </form>
-                    
-                              
-                                   <button class="btn w-75  ">Subscribe to Newsletter</button>
-                    
-                           
-                    
+
+                            <form class=" d-flex my-2 mx-3 px-4 w-75  ">
+                                <img src="./assets/img/logo/email-icon.svg" alt="search">
+
+                                <input class="form-control  border-0 rounded-0 text-center" type="email"
+                                    placeholder="Enter your email address" aria-label="Search">
+
+                            </form>
+
+
+                            <button class="btn w-75  ">Subscribe to Newsletter</button>
+
+
+
                         </div>
                     </div>
 
@@ -169,7 +302,8 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
