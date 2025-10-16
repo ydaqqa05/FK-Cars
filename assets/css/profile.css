@@ -43,7 +43,7 @@
     white-space: nowrap; 
    
   }
-.card{
+.cards .card{
     background-color: transparent;
 }
 .heart-icon {
@@ -64,13 +64,11 @@
   }
   
   .cards::-webkit-scrollbar-thumb {
-    background: transparent;       
+    background: #555;       
     border-radius: 4px;     
   }
   
-  .cards::-webkit-scrollbar-thumb:hover {
-    background: #555;       
-  }
+
 @media screen and (max-width:1400px) {
     .cards{
         gap: 0.5rem;
@@ -103,10 +101,10 @@
     
 }
   
-.card img{
+.cards .card img{
     background-color: var(--secondaryColor);
 }
 
-.card p{
+.cards .card p{
     color: var(--orange-text);
 }
