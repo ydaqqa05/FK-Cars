@@ -1,0 +1,138 @@
+:root {
+    --primaryColor: #000000;
+    --text-color: #fff;
+    --secondaryColor: #E4E4E7;
+    --blue-200: #93C5FD;
+    --text-secondary: #A1A1AA;
+    --mainFont: "Plus Jakarta Sans", sans-serif;
+  --orange-text:#FB923C;
+  --deep-teal-blue:#0E7490;
+  --deep-crimson:#881337;
+--very-dark-gray:#262626;
+--soft-pink:#FDA4AF;
+--rose-red:#E11D48;
+--bright-pink:#EC4899;
+--deep-purple:#86198F;
+--vivid-red:#DC2626;
+--warm-red:#F87171;
+--vibrant-purple:#8B5CF6;
+--purple-900:#4C1D95;
+--sky-400:#0EA5E9;
+--amber-300:#FBBF24;
+--lime-400:#84CC16;
+--teal-600:#0F766E;
+}
+
+.btn .breadcrumb,
+.btn .breadcrumb a,
+.btn .breadcrumb-item,.btn .breadcrumb-item::before{
+
+  color: var(--text-color) ;
+  font-size: 18px;
+}
+.btn .breadcrumb-item.active{
+color: var(--blue-200);
+font-size: 18px;
+}
+.breadcrumb a:hover {
+  color: #A1A1AA; 
+  text-decoration: none;     
+}
+span{
+    color: var(--blue-200);
+}
+.filters{
+    border: 1px solid var(--text-secondary);
+    border-radius: 12px;
+}
+.category-checkbox input,.category-people input,.category-rate input{
+    background-color: transparent;
+}
+.category-checkbox,.car-price,.category-rate,.color-group{
+    border-bottom: 1px solid var(--secondaryColor);
+}
+
+.form-check-input:checked{
+    background-color: var(--blue-200);
+    border-color: var(--blue-200);
+}
+.rating,.availability,.discount{
+    font-size: 18px;
+}
+.category-rate .form-check-input{
+    width: 12px;
+    height: 12px;
+    border-radius: 0;
+}
+.fa-star{
+    width: 18.49px;
+    height: 18.49px;
+}
+.availability,.discount{
+    border-bottom: 1px solid var(--secondaryColor);
+}
+.color{
+    width: 28px;
+    height: 28px;
+}
+.colors{
+    gap: 14px;
+}
+.light-gray{
+    background-color: var(--secondaryColor);
+}
+.deep-teal-blue{
+    background-color: var(--deep-teal-blue);
+}
+.deep-crimson{
+    background-color: var(--deep-crimson);
+}
+.text-secondary{
+    background-color: var(--text-secondary);
+}
+.secondaryColor{
+    background-color: var(--secondaryColor);
+}
+.very-dark-gray{
+    background-color: var(--very-dark-gray);
+}
+.soft-pink{
+    background-color: var(--soft-pink);
+}
+.rose-red{
+    background-color: var(--rose-red);
+}
+.bright-pink{
+background-color: var(--bright-pink);
+}
+.deep-purple{
+    background-color: var(--deep-purple);
+}
+.vivid-red{
+    background-color: var(--vivid-red);
+}
+.warm-red{
+    background-color: var(--warm-red);
+}
+.vibrant-purple{
+    background-color: var(--vibrant-purple);
+}
+.purple-900{
+    background-color: var(--purple-900);
+}
+.sky-400{
+    background-color: var(--sky-400);
+}
+.amber-300{
+    background-color: var(--amber-300);
+}
+.lime-400{
+    background-color: var(--lime-400);
+}
+.teal-600{
+    background-color: var(--teal-600);
+}
+.filters .btn:hover{
+    color:var(--text-color) ;
+background-color: transparent;
+}

@@ -59,6 +59,12 @@ background-color: var(--secondaryColor);
     display: flex;
     padding: 0 11px;
 }
+.buttons .return-shop a{
+    color: var(--primaryColor);
+}
+.buttons .return-shop :hover{
+    color: var(--text-color);
+}
 .checkout-btn{
     background-color: transparent;
     color: var(--text-color);
