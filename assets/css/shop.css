@@ -136,3 +136,116 @@ background-color: var(--bright-pink);
     color:var(--text-color) ;
 background-color: transparent;
 }
+.available-car{
+    border-bottom: 1px solid var(--secondaryColor);
+}
+.available-car .card .img {
+    height: 150px;               
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;            
+  }
+  
+  .available-car .card .img img {
+    max-width: 100%;            
+    max-height: 100%;            
+    width: auto;
+    height: auto;
+    object-fit: contain;        
+  }
+  
+
+.pages .active{
+    border: none;
+   
+    background-color: var(--blue-200);
+}
+.pages .unactive{
+    border: none;
+    width: 4px;
+    height: 4px;
+}
+
+@media screen and (max-width:588px) {
+    .pages a{
+        font-size: 12px;
+    }
+   
+}
+@media screen and (max-width:625px) {
+   
+    .sort{
+        display: none;
+    }
+}
+@media screen and (max-width:560px) {
+    .car-info{
+        font-size: 14px;
+    }
+  }
+  @media screen and (max-width:514px) {
+    .car-info{
+        font-size: 12px;
+    }
+  }
+  @media screen and (max-width:456px) {
+    .car-info{
+        font-size: 10px;
+    }
+  }
+  @media screen and (max-width:433px) {
+    .card-title{
+        font-size: 16px;
+    }
+  }
+  @media screen and (max-width:413px) {
+    .car-info{
+        font-size: 8px;
+    }
+  }
+@media (min-width: 390px) and (max-width: 767px) {
+    .custom-cards .col {
+      flex: 0 0 50%;   /* 2 per row only for small screens */
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .custom-cards .col {
+      flex: 0 0 33.3333%;   
+      max-width: 33.3333%;
+    }
+  }
+  .pages .btn{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @media screen  and (max-width:604px){
+    .pages .btn{
+       padding-left: 20px; 
+       padding-right: 20px; 
+        font-size: 14px;
+    }
+  }
+  @media screen  and (max-width:514px){
+    .pages .btn{
+       padding-left: 16px; 
+       padding-right: 16px; 
+        font-size: 12px;
+    }
+  }
+   @media screen  and (max-width:425px){
+    .pages .btn{
+       padding-left: 14px ; 
+       padding-right: 14px ; 
+        font-size: 10px;
+    }
+  }
+  @media screen  and (max-width:370px){
+    .pages .btn{
+       padding-left: 11px ; 
+       padding-right: 11px ; 
+        font-size: 8px;
+    }
+  } 
