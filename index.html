@@ -9,6 +9,8 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/car-detail.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
@@ -106,45 +108,147 @@
         </section>
         <section class="our-category text-white py-5">
             <div class="container">
-              <div class="category-content  rounded-4 p-4 shadow">
-                <h2 class="text-center fw-bold mb-5">
-                  OUR <span >CATEGORY</span>
-                </h2>
-          
-                <div class="row g-4">
-                  <div class="col-12 col-md-7">
-                    <div class="category-card  rounded-4  text-center position-relative">
-                        <img src="./assets/img/cars/Convertible.webp" alt="Convertible" class="img-fluid rounded-3 ">
-                      <h5 class="fw-bold mb-3 position-absolute top-0 start-0 mt-3 ms-3 Convertible">Convertible</h5>
-                      
+                <div class="category-content  rounded-4 p-4 shadow">
+                    <h2 class="text-center fw-bold mb-5">
+                        OUR <span>CATEGORY</span>
+                    </h2>
+
+                    <div class="row g-4">
+                        <div class="col-12 col-md-7">
+                            <div class="category-card  rounded-4  text-center position-relative">
+                                <img src="./assets/img/cars/Convertible.webp" alt="Convertible"
+                                    class="img-fluid rounded-3 ">
+                                <h5 class="fw-bold mb-3 position-absolute top-0 start-0 mt-3 ms-3 Convertible">
+                                    Convertible</h5>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-5">
+                            <div class="category-card  rounded-4  text-center h-100 position-relative">
+                                <img src="./assets/img/cars/sport.webp" alt="Sports" class="img-fluid rounded-3">
+                                <h5 class="fw-bold mb-3 top-0 start-0 mt-3 ms-3 position-absolute">Sports</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-5">
+                            <div class="category-card  rounded-4  text-center h-100 position-relative">
+                                <img src="./assets/img/cars/hashbacak.webp" alt="Hatchback" class="img-fluid rounded-3">
+                                <h5 class="fw-bold mb-3 top-0 start-0 mt-3 ms-3 position-absolute">Hatchback</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-7">
+                            <div class="category-card  rounded-4  text-center position-relative">
+                                <img src="./assets/img/cars/suv.webp" alt="SUV" class="img-fluid rounded-3">
+                                <h5 class="fw-bold mb-3 top-0 start-0 mt-3 ms-3 position-absolute">SUV</h5>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-          
-                  <div class="col-12 col-md-5">
-                    <div class="category-card  rounded-4  text-center h-100 position-relative">
-                      <img src="./assets/img/cars/sport.webp" alt="Sports" class="img-fluid rounded-3"> 
-                      <h5 class="fw-bold mb-3 top-0 start-0 mt-3 ms-3 position-absolute">Sports</h5>
-                    </div>
-                  </div>
-          
-                  <div class="col-12 col-md-5">
-                    <div class="category-card  rounded-4  text-center h-100 position-relative">
-                      <img src="./assets/img/cars/hashbacak.webp" alt="Hatchback" class="img-fluid rounded-3">
-                    <h5 class="fw-bold mb-3 top-0 start-0 mt-3 ms-3 position-absolute">Hatchback</h5>
                 </div>
-                  </div>
-          
-                  <div class="col-12 col-md-7">
-                    <div class="category-card  rounded-4  text-center position-relative">
-                      <img src="./assets/img/cars/suv.webp" alt="SUV" class="img-fluid rounded-3">
-                     <h5 class="fw-bold mb-3 top-0 start-0 mt-3 ms-3 position-absolute">SUV</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </section>
-          
+        </section>
+        <section class="popular-car might-like py-3">
+            <div class="container">
+                <div class="popular-car-head d-flex justify-content-between align-items-center">
+                    <h3 class="text-white  py-3"><span>Popular</span> Car</h3>
+                    <h6>View All</h6>
+                </div>
+
+                <div class="cards d-flex  gap-3 overflow-auto ">
+                    <div class="card text-light">
+                        <img src="./assets/img/cars/Koenigsegg.webp" class="card-img-top px-2 py-5 border rounded-3"
+                            alt="Koenigsegg">
+                        <div class="card-body px-0">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h5 class="card-title mb-0">Koenigsegg</h5><i
+                                    class="fa-regular fa-heart text-danger heart-icon"></i>
+                            </div>
+                            <p class=" mb-1">Sport</p>
+                            <div class="d-flex justify-content-between car-info  mb-2">
+                                <div><i class="fa-solid fa-gas-pump me-1"></i>90L</div>
+                                <div><i class="fa-regular fa-life-ring me-1"></i>Manual</div>
+                                <div><i class="fa-solid fa-user-group me-1"></i>2 People</div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>$100K</h5>
+                                <button type="button" class="btn btn-outline-light message-btn px-4 py-1 ">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-light ">
+                        <img src="./assets/img/cars/Nissan GT - R.webp" class="card-img-top px-2 py-5 border rounded-3"
+                            alt="Nissan GT - R">
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h5 class="card-title mb-0">Nissan GT - R</h5>
+                                <i class="fa-regular fa-heart text-danger heart-icon"></i>
+                            </div>
+                            <p class=" mb-1">Sport</p>
+                            <div class="d-flex justify-content-between car-info  mb-2">
+                                <div><i class="fa-solid fa-gas-pump me-1"></i>80L</div>
+                                <div><i class="fa-regular fa-life-ring me-1"></i>Manual</div>
+                                <div><i class="fa-solid fa-user-group me-1"></i>2 People</div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>$88K</h5> <button type="button" class="btn btn-outline-light message-btn px-4 py-1">
+                                    Buy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-light">
+                        <img src="./assets/img/cars/Rolls - Royce.webp" class="card-img-top px-2 py-5 border rounded-3"
+                            alt="Rolls - Royce">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h5 class="card-title mb-0">Rolls - Royce</h5><i
+                                    class="fa-regular fa-heart text-danger heart-icon"></i>
+                            </div>
+                            <p class=" mb-1">Sedan</p>
+                            <div class="d-flex justify-content-between car-info  mb-2">
+                                <div><i class="fa-solid fa-gas-pump me-1"></i>90L</div>
+                                <div><i class="fa-regular fa-life-ring me-1"></i>Manual</div>
+                                <div><i class="fa-solid fa-user-group me-1"></i>2 People</div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>$150K</h5> <button type="button"
+                                    class="btn btn-outline-light message-btn px-4 py-1 ">
+                                    Buy
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card text-light">
+                        <img src="./assets/img/cars/Nissan GT - R.webp" class="card-img-top px-2 py-5 border rounded-3"
+                            alt="Nissan GT - R">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <h5 class="card-title mb-0">Nissan GT - R</h5><i
+                                    class="fa-regular fa-heart text-danger heart-icon"></i>
+                            </div>
+                            <p class=" mb-1">Sport</p>
+                            <div class="d-flex justify-content-between car-info  mb-2">
+                                <div><i class="fa-solid fa-gas-pump me-1"></i>80L</div>
+                                <div><i class="fa-regular fa-life-ring me-1"></i>Manual</div>
+                                <div><i class="fa-solid fa-user-group me-1"></i>2 People</div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5>$88K</h5> <button type="button"
+                                    class="btn btn-outline-light message-btn px-4 py-1 ">
+                                    Buy
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
     <footer class="footer vh-100">
 
