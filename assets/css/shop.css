@@ -220,6 +220,12 @@ background-color: transparent;
   .pages .btn{
     padding-left: 24px;
     padding-right: 24px;
+    
+  }
+  .pages .pre-page:hover,.pages .post-page:hover{
+   color: var(--text-color);
+   background-color: transparent;
+    
   }
   @media screen  and (max-width:604px){
     .pages .btn{
@@ -249,3 +255,11 @@ background-color: transparent;
         font-size: 8px;
     }
   } 
+  .offcanvas{
+    background-color: var(--primaryColor);
+  }
+  @media screen and (max-width:506px){
+    .filter{
+        width: 100%;
+    }
+  }

@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="./assets/css/car-detail.css">
     <link rel="stylesheet" href="./assets/css/profile.css">
-    <link rel="stylesheet" href="./assets/css/shopping-cart.css">
+
     <link rel="stylesheet" href="./assets/css/shop.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
@@ -78,12 +78,12 @@
 
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="filters border text-white px-3 py-4 d-flex flex-column gap-3 mt-5">
+                    <div class="filters border text-white px-3 py-4 d-flex flex-column gap-3 mt-5 d-none d-lg-block ">
                         <div class="d-flex justify-content-between align-items-center border-bottom pb-3">
                             <h4>Filters</h4>
-                            <img src="./assets/img/logo/filter-outlined.svg" alt="">
+                            <img src="./assets/img/logo/filter-outlined.svg" alt="filter-outlined">
                         </div>
-                        <div class="category-type d-flex flex-column">
+                        <div class="category-type d-flex flex-column mt-2">
                             <h5>Category</h5>
                             <ul class="category-checkbox list-unstyled  pb-3">
                                 <li>
@@ -190,7 +190,7 @@
                             <input type="range" id="priceRange" min="0" max="100" value="40" class="slider ">
                             <p class="fs-6 m-0">Max. $100K</p>
                         </div>
-                        <div class="car-rate d-flex flex-column">
+                        <div class="car-rate d-flex flex-column mt-2">
                             <p class="rating mb-1">Rating</p>
                             <ul class="category-rate list-unstyled  pb-3 ">
                                 <li>
@@ -259,10 +259,10 @@
                         <div class="availability d-flex justify-content-between align-items-center">
                             <p>Availability</p><i class="fa-solid fa-plus"></i>
                         </div>
-                        <div class="discount d-flex justify-content-between align-items-center">
+                        <div class="discount d-flex justify-content-between align-items-center mt-2">
                             <p>Discount</p><i class="fa-solid fa-plus"></i>
                         </div>
-                        <div class="color-group flex-column d-flex pb-3 ">
+                        <div class="color-group flex-column d-flex pb-3 mt-2">
                             <p>Colors</p>
                             <div class="colors d-flex flex-wrap ">
                                 <div class="light-gray color  rounded-5"></div>
@@ -285,16 +285,248 @@
                                 <div class="teal-600 color  rounded-5"></div>
                             </div>
                         </div>
-                        <button class="btn btn-light fw-semibold ">Apply Filter</button>
+                        <button class="btn btn-light fw-semibold w-100 mt-3 ">Apply Filter</button>
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="car-available-head d-flex justify-content-between text-white align-items-center flex-wrap pt-2 ">
+                    <div
+                        class="car-available-head d-flex justify-content-between text-white align-items-center flex-wrap pt-2 ">
                         <h2>All Available <span>Cars</span> </h2>
-                        <div class="d-flex gap-3">
-                            <p><span>Showing 1-10 of 100 Products</span> </p>
-                            <p class="d-none d-lg-block">Sort by: Most Popular </p>
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 filter">
+                            <p class="mb-0">
+                                <span>Showing 1–10 of 100 Products</span>
+                            </p>
+
+                            <div class="d-flex align-items-center gap-2 ">
+                                <p class="mb-0 d-none d-lg-block">Sort by: Most Popular</p>
+                                <button class="btn  bg-transparent" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img
+                                                src="./assets/img/logo/filter-outlined.svg" alt="Filter"
+                                                class="d-lg-none" style="width: 24px; height: 24px;"></button>
+
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel"> 
+                                        </h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body ">
+                                        <div class="filters border  text-white px-3 py-4 d-flex flex-column gap-3 mt-5 ">
+                                            <div class="d-flex justify-content-between align-items-center border-bottom pb-3">
+                                                <h4>Filters</h4>
+                                                <img src="./assets/img/logo/filter-outlined.svg" alt="filter-outlined">
+                                            </div>
+                                            <div class="category-type d-flex flex-column">
+                                                <h5>Category</h5>
+                                                <ul class="category-checkbox list-unstyled  pb-3">
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                                            <label class="form-check-label" for="checkDefault">
+                                                                Sport (10)
+                                                            </label>
+                                                        </div>
+                    
+                                                    </li>
+                                                    <li>
+                    
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked"
+                                                                checked>
+                                                            <label class="form-check-label " for="checkChecked">
+                                                                SUV (12)
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked2"
+                                                                checked>
+                                                            <label class="form-check-label" for="checkChecked2">
+                                                                MPV (16)
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked3"
+                                                                checked>
+                                                            <label class="form-check-label" for="checkChecked3">
+                                                                Sedan (20)
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked4"
+                                                                checked>
+                                                            <label class="form-check-label" for="checkChecked4">
+                                                                Coupe (14)
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center ">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked5"
+                                                                checked>
+                                                            <label class="form-check-label" for="checkChecked5">
+                                                                Hatchback (14)
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="category-people d-flex flex-column">
+                                                <h5>Category</h5>
+                                                <ul class="category-checkbox list-unstyled  pb-3">
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault2">
+                                                            <label class="form-check-label" for="checkDefault2">
+                                                                2 Person (10)
+                                                            </label>
+                                                        </div>
+                    
+                                                    </li>
+                                                    <li>
+                    
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked6"
+                                                                checked>
+                                                            <label class="form-check-label" for="checkChecked6">
+                                                                4 Person (14)
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked7"
+                                                                checked>
+                                                            <label class="form-check-label" for="checkChecked7">
+                                                                6 Person (12)
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkChecked8"
+                                                                checked>
+                                                            <label class="form-check-label" for="checkChecked8">
+                                                                8 or More (16)
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="car-price d-flex flex-column gap-1 pb-3">
+                                                <h5 class="m-0">Price</h5>
+                                                <input type="range" id="priceRange" min="0" max="100" value="40" class="slider ">
+                                                <p class="fs-6 m-0">Max. $100K</p>
+                                            </div>
+                                            <div class="car-rate d-flex flex-column">
+                                                <p class="rating mb-1">Rating</p>
+                                                <ul class="category-rate list-unstyled  pb-3 ">
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1 ">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault2">
+                                                            <div class="stars d-flex gap-1 align-items-center ">
+                    
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </li>
+                                                    <li>
+                    
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault2">
+                                                            <div class="stars d-flex gap-1 align-items-center">
+                    
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    
+                                                            </div>
+                                                        </div>
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault2">
+                                                            <div class="stars d-flex gap-1 align-items-center">
+                    
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault2">
+                                                            <div class="stars d-flex gap-1 align-items-center">
+                    
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check d-flex gap-2 align-items-center mb-1">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault2">
+                                                            <div class="stars d-flex gap-1 align-items-center">
+                    
+                                                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    
+                    
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="availability d-flex justify-content-between align-items-center">
+                                                <p>Availability</p><i class="fa-solid fa-plus"></i>
+                                            </div>
+                                            <div class="discount d-flex justify-content-between align-items-center">
+                                                <p>Discount</p><i class="fa-solid fa-plus"></i>
+                                            </div>
+                                            <div class="color-group flex-column d-flex pb-3 ">
+                                                <p>Colors</p>
+                                                <div class="colors d-flex flex-wrap ">
+                                                    <div class="light-gray color  rounded-5"></div>
+                                                    <div class="deep-teal-blue color  rounded-5"></div>
+                                                    <div class="deep-crimson color  rounded-5"></div>
+                                                    <div class="text-secondary color  rounded-5"></div>
+                                                    <div class="secondaryColor color rounded-5"></div>
+                                                    <div class="very-dark-gray color rounded-5"></div>
+                                                    <div class="soft-pink color rounded-5"></div>
+                                                    <div class="rose-red color rounded-5"></div>
+                                                    <div class="bright-pink color  rounded-5"></div>
+                                                    <div class="deep-purple color  rounded-5"></div>
+                                                    <div class="vivid-red color  rounded-5"></div>
+                                                    <div class="warm-red color  rounded-5"></div>
+                                                    <div class="vibrant-purple color  rounded-5"></div>
+                                                    <div class="purple-900 color  rounded-5"></div>
+                                                    <div class="sky-400 color  rounded-5"></div>
+                                                    <div class="amber-300 color  rounded-5"></div>
+                                                    <div class="lime-400 color  rounded-5"></div>
+                                                    <div class="teal-600 color  rounded-5"></div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-light fw-semibold ">Apply Filter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                     <div class="available-car container pt-2 pb-1">
                         <div class="row  row-cols-1 row-cols-md-3 g-4 custom-cards">
@@ -321,7 +553,10 @@
                                         </div>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h5>$100K</h5>
-                                            <button type="button" class="btn btn-outline-light px-4 py-1">Buy</button>
+                                            <button type="button"
+                                                    class="btn btn-outline-light message-btn px-4 py-1 ">
+                                                 Buy
+                                                </button>
                                         </div>
                                     </div>
                                 </div>
@@ -533,36 +768,33 @@
                         </div>
                     </div>
                     <div class="pages d-flex justify-content-around align-items-center pt-4">
-                        <a href="#" class="btn btn-outline-light message-btn return-shop ">
-                            ←     Previous
-                          </a>
-                           <div class="page-number d-flex">
+                        <a href="#" class="btn btn-light fw-semibold pre-page">←     Previous</a>
+                        <div class="page-number d-flex">
                             <a href="#" class="btn btn-outline-light message-btn checkout-btn  active">
                                 1
-                              </a>
-                              <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
-                               2
-                              </a>
-                              <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
+                            </a>
+                            <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
+                                2
+                            </a>
+                            <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
                                 3
-                              </a>
-                              <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
-                              ...
-                              </a>
-                              <a href="#" class="btn btn-outline-light message-btn checkout-btnunactive">
-                               8
-                              </a>
-                              <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
-                               9
-                              </a>
-                              <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
-                              10
-                              </a>
-                           </div>
-                              <a href="#" class="btn btn-outline-light message-btn return-shop  ">
-                                Next     →
-                              </a>
+                            </a>
+                            <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
+                                ...
+                            </a>
+                            <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
+                                8
+                            </a>
+                            <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
+                                9
+                            </a>
+                            <a href="#" class="btn btn-outline-light message-btn checkout-btn unactive">
+                                10
+                            </a>
                         </div>
+                        <a href="#" class="btn btn-light fw-semibold post-page">Next     →</a>
+                       
+                    </div>
                 </div>
             </div>
         </div>
