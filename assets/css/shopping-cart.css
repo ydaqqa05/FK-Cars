@@ -7,6 +7,9 @@
     --mainFont: "Plus Jakarta Sans", sans-serif;
   --orange-text:#FB923C;
 }
+.navbar .search-btn:hover{
+background-color: transparent;
+}
 .breadcrumb,
 .breadcrumb a,.breadcrumb-item+.breadcrumb-item::before {
   color: #A1A1AA ;
