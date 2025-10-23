@@ -148,3 +148,52 @@ color: var(--blue-200);
 .might-like img{
   width: 300px;
 }
+.card {
+  border-radius: 24px;
+}
+
+.might-like {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.might-like span {
+  color: var(--blue-200);
+}
+
+.might-like .cards {
+  display: flex;
+  flex-wrap: nowrap; 
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap; 
+}
+
+.might-like .cards .card {
+ 
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  min-width: 300px;
+}
+
+.might-like .cards .card img {
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+
+.might-like .cards .card img:hover  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  z-index: 2;
+
+}
+
+
+
