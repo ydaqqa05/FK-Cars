@@ -7,16 +7,16 @@
     --mainFont: "Plus Jakarta Sans", sans-serif;
 }
 
-.info .number,
-.info .email-info,
-.info .location {
-    color: var(--text-secondary)
-}
-
 .info {
     border-bottom: 1px solid var(--text-color);
     border-left: 1px solid var(--text-color);
     border-right: 1px solid var(--text-color);
+}
+
+.info .number,
+.info .email-info,
+.info .location {
+    color: var(--text-secondary)
 }
 
 .in-touch {
@@ -27,22 +27,21 @@
     border: 1px solid var(--text-color);
 }
 
-input {
-    background-color: transparent;
-}
-
 .message-btn {
     background-color: transparent;
 }
-.inputs input{
+
+.inputs input {
+    background-color: transparent;
     border: none;
     border: 1px solid var(--text-secondary);
 }
+
 form .form-control {
     background-color: transparent;
     border: 1px solid var(--text-secondary);
 }
- .form-control::placeholder {
-    color: var(--text-secondary); /* light gray */
-  }
- 
+
+.form-control::placeholder {
+    color: var(--text-secondary);
+}

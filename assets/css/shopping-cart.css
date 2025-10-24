@@ -5,89 +5,118 @@
     --blue-200: #93C5FD;
     --text-secondary: #A1A1AA;
     --mainFont: "Plus Jakarta Sans", sans-serif;
-  --orange-text:#FB923C;
+    --orange-text: #FB923C;
 }
-.navbar .search-btn:hover{
-background-color: transparent;
+
+.navbar .search-btn:hover {
+    background-color: transparent;
 }
+
 .breadcrumb,
-.breadcrumb a,.breadcrumb-item+.breadcrumb-item::before {
-  color: #A1A1AA ;
+.breadcrumb a,
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #A1A1AA;
 }
-.product .img
-{
-        border-radius: 13.42px;
+
+.product .img {
+    border-radius: 13.42px;
 }
-.product img{
+
+.product img {
 
     width: 197px;
     height: 125px;
 }
-.product-desc i{
-width: 16px;
-height: 18px;
-color: red;
+
+.product-desc i {
+    width: 16px;
+    height: 18px;
+    color: red;
 }
-.product .btn{
-       padding: 6px 25px;
+
+.product .btn {
+    padding: 6px 25px;
 }
-.btn{
- 
+
+.btn {
+
     background-color: var(--text-color);
     color: var(--primaryColor);
 }
-.promo-code .btn:hover{
-background-color: var(--secondaryColor);
+
+.promo-code .btn:hover {
+    background-color: var(--secondaryColor);
 }
-.btn:hover{
-      background-color: var(--primaryColor);
+
+.btn:hover {
+    background-color: var(--primaryColor);
     color: var(--text-color);
 }
-.apply-btn:hover{color: var(--primaryColor);}
-.type{
+
+.apply-btn:hover {
+    color: var(--primaryColor);
+}
+
+.type {
     color: var(--orange-text);
-} 
+}
+
 .cart-right p {
-    margin-bottom: 0.25rem; 
-  }
-  
-  .cart-right .border-bottom {
+    margin-bottom: 0.25rem;
+}
+
+.cart-right .border-bottom {
     margin-bottom: 0.5rem;
-    padding-bottom: 0.3rem; 
-  }
-  form {
+    padding-bottom: 0.3rem;
+}
+
+form {
     background-color: var(--secondaryColor);
     border: 3px solid #E7E6EF;
     border-radius: 62px;
     display: flex;
     padding: 0 11px;
 }
-.buttons .return-shop a{
+
+.buttons .return-shop a {
     color: var(--primaryColor);
 }
-.buttons .return-shop :hover{
+
+.buttons .return-shop :hover {
     color: var(--text-color);
 }
-.checkout-btn{
+
+.checkout-btn {
     background-color: transparent;
     color: var(--text-color);
 }
-.checkout-btn:hover{
+
+.checkout-btn:hover {
     background-color: var(--text-color);
     color: var(--primaryColor);
 }
+
 @media screen and (max-width:479px) {
-    .buttons button{
+    .buttons a {
         font-size: 13px;
     }
+
 }
+
 @media screen and (max-width:420px) {
-    .buttons button{
+    .buttons a {
         font-size: 11px;
     }
 }
+
 @media screen and (max-width:386px) {
-    .buttons button{
+    .buttons a {
         font-size: 9px;
+    }
+}
+
+@media screen and (max-width:342px) {
+    .buttons a {
+        font-size: 7px;
     }
 }

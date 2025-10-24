@@ -1,101 +1,104 @@
 :root {
-    --primaryColor: #000000;
-    --text-color: #fff;
-    --secondaryColor: #E4E4E7;
-    --blue-200: #93C5FD;
-    --text-secondary: #A1A1AA;
-    --mainFont: "Plus Jakarta Sans", sans-serif;
+  --primaryColor: #000000;
+  --text-color: #fff;
+  --secondaryColor: #E4E4E7;
+  --blue-200: #93C5FD;
+  --text-secondary: #A1A1AA;
+  --mainFont: "Plus Jakarta Sans", sans-serif;
 }
 
 .signup-hero {
-    background-image: url(../img/public/login-car.webp);
-    min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2rem 0;
-    transform: rotateY(180deg);
+  background-image: url(../img/public/login-car.webp);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+  transform: rotateY(180deg);
 }
 
 .signup {
-    transform: rotateY(180deg);
-    border: 1px solid var(--text-secondary);
+  transform: rotateY(180deg);
+  border: 1px solid var(--text-secondary);
 }
 
 .signup-hero p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .login-way-icon .icon {
-    color: var(--text-secondary);
-    border: 1px solid var(--text-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--text-secondary);
 
 }
+
 .custom-checkbox {
-    color: var(--text-secondary);
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    position: relative;
-  }
-  
-  /* Hide native checkbox but keep it clickable */
-  .custom-checkbox input {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* Custom square */
+  color: var(--text-secondary);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--text-secondary);
+  border-radius: 4px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.checkmark i {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: white;
+}
+
+.custom-checkbox input:checked+.checkmark i {
+  opacity: 1;
+}
+
+@media screen and (max-width:561px) {
   .checkmark {
     width: 20px;
     height: 20px;
-    border: 1px solid var(--text-secondary);
-    border-radius: 4px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
-  }
-  
-  .checkmark i {
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    color: white;
-  }
-  .custom-checkbox input:checked + .checkmark i {
-    opacity: 1;
   }
 
-  @media screen and (max-width:561px) {
-.checkmark{
-    width: 20px;
-    height: 20px;
 }
-    
+
+@media screen and (max-width:511px) {
+  .checkmark {
+    width: 25px;
+    height: 20px;
   }
-  @media screen and (max-width:511px) {
-    .checkmark{
-        width: 25px;
-        height: 20px;
-    }
-        
-      }
-      @media screen and (max-width:443px) {
-        .checkmark{
-            width:30px;
-            height: 20px;
-        }
-          }
-          @media screen and (max-width:353px) {
-            .checkmark{
-                width: 40px;
-                height: 20px;
-            }
-                
-              }
+
+}
+
+@media screen and (max-width:443px) {
+  .checkmark {
+    width: 30px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width:353px) {
+  .checkmark {
+    width: 40px;
+    height: 20px;
+  }
+
+}
