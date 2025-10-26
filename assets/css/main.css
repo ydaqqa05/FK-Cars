@@ -149,7 +149,7 @@ form .search-btn {
 
 .navbar-toggler-icon::before {
     content: "\2630";
-    color: white;
+    color: var(--text-color);
     font-size: 1.5rem;
 }
 
@@ -191,7 +191,7 @@ form .search-btn {
   .category-card {
     border-radius: 20px;
     background-color: var(--text-color);
-    color: #000000;
+    color: var(--primaryColor);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -244,20 +244,29 @@ form .search-btn {
     padding:20px;
  
   }
-
+  .sub-left h2{
+    font-size: 28px;
+  }
   .sub-left span {
     color: var(--blue-200);
  
 }
+
 @media screen and (max-width:989px) {
 
 
     .subscribe{
-        width: 80%;
+        width: 85%;
         top:20px;
         left: 10%;
    padding: 10px;
     }
+}
+@media screen and (max-width:826px) {
+
+ .sub-left h2{
+    font-size: 24px;
+ }
 }
 @media screen and (max-width:769px) {
     .subscribe{
@@ -270,7 +279,7 @@ form .search-btn {
       padding-top: 100px 0;
     }
     .sub-left h2{
-        font-size: 20px !important;
+        font-size: 20px ;
        }
       
 }
@@ -285,7 +294,7 @@ form .search-btn {
       padding-top: 100px 0;
     }
     .sub-left h2{
-        font-size: 20px !important;
+        font-size: 20px ;
        }
        .sub-right .form-control{
         font-size: 12px;
