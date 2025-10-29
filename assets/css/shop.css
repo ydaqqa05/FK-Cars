@@ -1,268 +1,3 @@
-:root {
-    --primaryColor: #000000;
-    --text-color: #fff;
-    --secondaryColor: #E4E4E7;
-    --blue-200: #93C5FD;
-    --text-secondary: #A1A1AA;
-    --mainFont: "Plus Jakarta Sans", sans-serif;
-  --orange-text:#FB923C;
-  --deep-teal-blue:#0E7490;
-  --deep-crimson:#881337;
---very-dark-gray:#262626;
---soft-pink:#FDA4AF;
---rose-red:#E11D48;
---bright-pink:#EC4899;
---deep-purple:#86198F;
---vivid-red:#DC2626;
---warm-red:#F87171;
---vibrant-purple:#8B5CF6;
---purple-900:#4C1D95;
---sky-400:#0EA5E9;
---amber-300:#FBBF24;
---lime-400:#84CC16;
---teal-600:#0F766E;
-}
-
-.btn .breadcrumb,
-.btn .breadcrumb a,
-.btn .breadcrumb-item,.btn .breadcrumb-item::before{
-
-  color: var(--text-color) ;
-  font-size: 18px;
-}
-.btn .breadcrumb-item.active{
-color: var(--blue-200);
-font-size: 18px;
-}
-.breadcrumb a:hover {
-  color: #A1A1AA; 
-  text-decoration: none;     
-}
-span{
-    color: var(--blue-200);
-}
-.filters{
-    border: 1px solid var(--text-secondary);
-    border-radius: 12px;
-}
-.category-checkbox input,.category-people input,.category-rate input{
-    background-color: transparent;
-}
-.category-checkbox,.car-price,.category-rate,.color-group{
-    border-bottom: 1px solid var(--secondaryColor);
-}
-
-.form-check-input:checked{
-    background-color: var(--blue-200);
-    border-color: var(--blue-200);
-}
-.rating,.availability,.discount{
-    font-size: 18px;
-}
-.category-rate .form-check-input{
-    width: 12px;
-    height: 12px;
-    border-radius: 0;
-}
-.fa-star{
-    width: 18.49px;
-    height: 18.49px;
-}
-.availability,.discount{
-    border-bottom: 1px solid var(--secondaryColor);
-}
-.color{
-    width: 28px;
-    height: 28px;
-}
-.colors{
-    gap: 14px;
-}
-.light-gray{
-    background-color: var(--secondaryColor);
-}
-.deep-teal-blue{
-    background-color: var(--deep-teal-blue);
-}
-.deep-crimson{
-    background-color: var(--deep-crimson);
-}
-.text-secondary{
-    background-color: var(--text-secondary);
-}
-.secondaryColor{
-    background-color: var(--secondaryColor);
-}
-.very-dark-gray{
-    background-color: var(--very-dark-gray);
-}
-.soft-pink{
-    background-color: var(--soft-pink);
-}
-.rose-red{
-    background-color: var(--rose-red);
-}
-.bright-pink{
-background-color: var(--bright-pink);
-}
-.deep-purple{
-    background-color: var(--deep-purple);
-}
-.vivid-red{
-    background-color: var(--vivid-red);
-}
-.warm-red{
-    background-color: var(--warm-red);
-}
-.vibrant-purple{
-    background-color: var(--vibrant-purple);
-}
-.purple-900{
-    background-color: var(--purple-900);
-}
-.sky-400{
-    background-color: var(--sky-400);
-}
-.amber-300{
-    background-color: var(--amber-300);
-}
-.lime-400{
-    background-color: var(--lime-400);
-}
-.teal-600{
-    background-color: var(--teal-600);
-}
-.filters .btn:hover{
-    color:var(--text-color) ;
-background-color: transparent;
-}
-.available-car{
-    border-bottom: 1px solid var(--secondaryColor);
-}
-.available-car .card .img {
-    height: 150px;               
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;            
-  }
-  
-  .available-car .card .img img {
-    max-width: 100%;            
-    max-height: 100%;            
-    width: auto;
-    height: auto;
-    object-fit: contain;        
-  }
-  
-
-.pages .active{
-    border: none;
-   
-    background-color: var(--blue-200);
-}
-.pages .unactive{
-    border: none;
-    width: 4px;
-    height: 4px;
-}
-
-@media screen and (max-width:588px) {
-    .pages a{
-        font-size: 12px;
-    }
-   
-}
-@media screen and (max-width:625px) {
-   
-    .sort{
-        display: none;
-    }
-}
-@media screen and (max-width:560px) {
-    .car-info{
-        font-size: 14px;
-    }
-  }
-  @media screen and (max-width:514px) {
-    .car-info{
-        font-size: 12px;
-    }
-  }
-  @media screen and (max-width:456px) {
-    .car-info{
-        font-size: 10px;
-    }
-  }
-  @media screen and (max-width:433px) {
-    .card-title{
-        font-size: 16px;
-    }
-  }
-  @media screen and (max-width:413px) {
-    .car-info{
-        font-size: 8px;
-    }
-  }
-@media (min-width: 390px) and (max-width: 767px) {
-    .custom-cards .col {
-      flex: 0 0 50%;   /* 2 per row only for small screens */
-      max-width: 50%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .custom-cards .col {
-      flex: 0 0 33.3333%;   
-      max-width: 33.3333%;
-    }
-  }
-  .pages .btn{
-    padding-left: 24px;
-    padding-right: 24px;
-    
-  }
-  .pages .pre-page:hover,.pages .post-page:hover{
-   color: var(--text-color);
-   background-color: transparent;
-    
-  }
-  @media screen  and (max-width:604px){
-    .pages .btn{
-       padding-left: 20px; 
-       padding-right: 20px; 
-        font-size: 14px;
-    }
-  }
-  @media screen  and (max-width:514px){
-    .pages .btn{
-       padding-left: 16px; 
-       padding-right: 16px; 
-        font-size: 12px;
-    }
-  }
-   @media screen  and (max-width:425px){
-    .pages .btn{
-       padding-left: 14px ; 
-       padding-right: 14px ; 
-        font-size: 10px;
-    }
-  }
-  @media screen  and (max-width:370px){
-    .pages .btn{
-       padding-left: 11px ; 
-       padding-right: 11px ; 
-        font-size: 8px;
-    }
-  } 
-  .offcanvas{
-    background-color: var(--primaryColor);
-  }
-  @media screen and (max-width:506px){
-    .filter{
-        width: 100%;
-    }
-  }
 
  
   :root {
@@ -473,7 +208,7 @@ background-color: transparent;
   }
 @media (min-width: 390px) and (max-width: 767px) {
     .custom-cards .col {
-      flex: 0 0 50%;   /* 2 per row only for small screens */
+      flex: 0 0 50%;   
       max-width: 50%;
     }
   }
@@ -494,28 +229,28 @@ background-color: transparent;
    background-color: transparent;
     
   }
-  @media screen  and (max-width:604px){
+  @media screen  and (max-width:611px){
     .pages .btn{
        padding-left: 20px; 
        padding-right: 20px; 
         font-size: 14px;
     }
   }
-  @media screen  and (max-width:514px){
+  @media screen  and (max-width:520px){
     .pages .btn{
        padding-left: 16px; 
        padding-right: 16px; 
         font-size: 12px;
     }
   }
-   @media screen  and (max-width:425px){
+   @media screen  and (max-width:429px){
     .pages .btn{
        padding-left: 14px ; 
        padding-right: 14px ; 
         font-size: 10px;
     }
   }
-  @media screen  and (max-width:370px){
+  @media screen  and (max-width:374px){
     .pages .btn{
        padding-left: 11px ; 
        padding-right: 11px ; 
@@ -534,13 +269,15 @@ background-color: transparent;
  
   .card {
     position: relative;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out ;
+   
  }
  
  .card .img {
     width: 100%;
     height: 200px;
     transition: all 0.3s ease-in-out;
+   
  }
  
  .card .img img {
@@ -548,12 +285,14 @@ background-color: transparent;
     height: 100%;
     object-fit: contain;
     transition: all 0.3s ease-in-out;
+    
  }
  
  .card .card-body {
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out ;
+   
  }
  
 
@@ -568,6 +307,7 @@ background-color: transparent;
  
  .card .img:hover .img img {
     object-fit: cover;
+    
  }
  
  .card .img:hover .card-body {
