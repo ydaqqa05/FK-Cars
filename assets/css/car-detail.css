@@ -1,153 +1,159 @@
 :root {
-    --primaryColor: #000000;
-    --text-color: #fff;
-    --secondaryColor: #E4E4E7;
-    --blue-200: #93C5FD;
-    --text-secondary: #A1A1AA;
-    --mainFont: "Plus Jakarta Sans", sans-serif;
-  --orange-text:#FB923C;
+  --primaryColor: #000000;
+  --text-color: #fff;
+  --secondaryColor: #E4E4E7;
+  --blue-200: #93C5FD;
+  --text-secondary: #A1A1AA;
+  --mainFont: "Plus Jakarta Sans", sans-serif;
+  --orange-text: #FB923C;
 }
+
 .btn .breadcrumb,
 .btn .breadcrumb a,
-.btn .breadcrumb-item,.btn .breadcrumb-item::before,
+.btn .breadcrumb-item,
+.btn .breadcrumb-item::before,
 .btn .breadcrumb-item.active {
 
-  color: var(--text-secondary) ;
+  color: var(--text-secondary);
   font-size: 18px;
 }
 
 .breadcrumb a:hover {
-  color: #A1A1AA; 
-  text-decoration: none;     
+  color: #A1A1AA;
+  text-decoration: none;
 }
-.side-back img{
+
+.side-back img {
   width: 100%;
 }
+
 @media screen and (max-width:786px) {
-  .side-back img{
+  .side-back img {
     width: calc((100% - 16px) /2);
   }
 }
 
 @media (min-width: 1011px) and (max-width:1200px) {
-  
- 
+
+
   .button-group .btn {
-      font-size: 14px;
-      
+    font-size: 14px;
+
   }
 }
+
 @media (max-width: 767px) {
-  
- 
+
+
   .button-group .btn {
-      flex: 1;
-      font-size: 16px;
+    flex: 1;
+    font-size: 16px;
   }
 }
-.features{
+
+.features {
   color: var(--text-secondary);
   border-bottom: 1px solid var(--text-secondary);
 }
- @media screen and (max-width:531px) {
-  .features{
+
+@media screen and (max-width:531px) {
+  .features {
     font-size: 14px;
   }
-  .features img{
+
+  .features img {
     height: 20px;
     width: 20px;
   }
 }
- @media screen and (max-width:483px) {
-  .features{
+
+@media screen and (max-width:483px) {
+  .features {
     font-size: 12px;
   }
-  .features img{
+
+  .features img {
     height: 16px;
     width: 16px;
   }
 }
+
 @media screen and (max-width:435px) {
-  .features{
+  .features {
     font-size: 10px;
   }
-  .features img{
+
+  .features img {
     height: 14px;
     width: 14px;
   }
 }
- 
+
 @media screen and (max-width:357px) {
-  .button-group .btn{
+  .button-group .btn {
     font-size: 12px;
   }
-}   
-.car-overview{
-  color: var(--text-secondary);
 }
-.desc-right .email, .buttons .review,.might-like .card .btn{
-  color: var(--text-color);
-  background-color:transparent;
-  }
-.desc-right .email:hover,.buttons .review:hover,.might-like .card .btn:hover{
 
-color: var(--primaryColor);
-background-color: var(--text-color);
-}
-.unactive{
+.car-overview {
   color: var(--text-secondary);
 }
-.head-name{
+
+.desc-right .email,
+.buttons .review,
+.might-like .card .btn {
+  color: var(--text-color);
+  background-color: transparent;
+}
+
+.desc-right .email:hover,
+.buttons .review:hover,
+.might-like .card .btn:hover {
+
+  color: var(--primaryColor);
+  background-color: var(--text-color);
+}
+
+.unactive {
+  color: var(--text-secondary);
+}
+
+.head-name {
   font-size: 48px;
 }
+
 @media screen and (max-width:768px) {
-  .review-head .head-name{
-    font-size:30px ;
+  .review-head .head-name {
+    font-size: 30px;
   }
-  .review-head .buttons{
+
+  .review-head .buttons {
     font-size: 14px;
   }
 }
+
 @media (max-width: 576px) {
   .head-name {
     font-size: 1.25rem;
   }
+
   .buttons .btn {
     font-size: 0.85rem;
     padding: 4px 10px;
   }
 }
+
 @media (max-width: 428px) {
-  
-  .buttons  {
+
+  .buttons {
     width: 100%;
   }
-  .buttons .btn{
+
+  .buttons .btn {
     flex: 1;
   }
 }
-.card{
-  border-radius: 24px;
-}
-.might-like{
-  width: 100%;
-  overflow-x: auto;
-}
-.might-like span{
-color: var(--blue-200);
-}
-.might-like .cards {
-  display: flex;
-  flex-wrap: nowrap; 
-  gap: 1rem;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap; 
- 
-}
-.might-like img{
-  width: 300px;
-}
+
 .card {
   border-radius: 24px;
 }
@@ -163,15 +169,42 @@ color: var(--blue-200);
 
 .might-like .cards {
   display: flex;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
   gap: 1rem;
   overflow-x: auto;
   overflow-y: hidden;
-  white-space: nowrap; 
+  white-space: nowrap;
+
+}
+
+.might-like img {
+  width: 300px;
+}
+
+.card {
+  border-radius: 24px;
+}
+
+.might-like {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.might-like span {
+  color: var(--blue-200);
+}
+
+.might-like .cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
 .might-like .cards .card {
- 
+
   position: relative;
   transition: all 0.3s ease-in-out;
   min-width: 300px;
@@ -184,16 +217,13 @@ color: var(--blue-200);
   transition: all 0.3s ease-in-out;
 }
 
-.might-like .cards .card img:hover  {
+.might-like .cards .card img:hover {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain; 
+  object-fit: contain;
   z-index: 2;
 
 }
-
-
-

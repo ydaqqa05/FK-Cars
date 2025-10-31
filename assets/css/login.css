@@ -6,30 +6,35 @@
     --text-secondary: #A1A1AA;
     --mainFont: "Plus Jakarta Sans", sans-serif;
 }
-.login-hero{
-    background-image: url(../img/public/login-car.webp); 
-   min-height:100vh; 
+
+.login-hero {
+    background-image: url(../img/public/login-car.webp);
+    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2rem 0; 
-   
+    padding: 2rem 0;
+
 }
-.login-hero p{
+
+.login-hero p {
     font-size: 14px;
 }
-.login{
+
+.login {
     border: 1px solid var(--text-secondary);
-   
-    
+
+
 }
-.login-way-icon .icon{
+
+.login-way-icon .icon {
     color: var(--text-secondary);
     border: 1px solid var(--text-secondary);
 
 }
+
 @media screen and (min-width:576px) and (max-width:768px) {
     .login-way-icon {
-font-size: 13px;
+        font-size: 13px;
     }
 }

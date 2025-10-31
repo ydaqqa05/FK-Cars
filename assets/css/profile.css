@@ -5,106 +5,120 @@
     --blue-200: #93C5FD;
     --text-secondary: #A1A1AA;
     --mainFont: "Plus Jakarta Sans", sans-serif;
-  --orange-text:#FB923C;
+    --orange-text: #FB923C;
 }
-.profile{
+
+.profile {
     min-height: 100vh;
 }
+
 .profile-info-left {
     border-color: var(--text-secondary);
 }
 
-.profile-desc{
+.profile-desc {
     color: var(--secondaryColor);
     font-size: 18px;
 }
-.joined,.history-desc{
+
+.joined,
+.history-desc {
     color: var(--text-secondary);
 }
+
 @media screen and (max-width:376px) {
-    .order{
+    .order {
         font-size: 12px;
     }
 }
-.car-info{
+
+.car-info {
     color: var(--blue-200);
 }
 
 .whislist {
     width: 100%;
     overflow-x: auto;
-  }
+}
+
 .whislist .cards {
     display: flex;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     gap: 1rem;
     overflow-x: auto;
     overflow-y: hidden;
-    white-space: nowrap; 
-   
-  }
-.cards .card{
+    white-space: nowrap;
+
+}
+
+.cards .card {
     background-color: transparent;
 }
+
 .heart-icon {
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
-  }
-  
-  .heart-icon:hover {
-    font-weight: 900; 
+}
+
+.heart-icon:hover {
+    font-weight: 900;
     transform: scale(1.2);
-  }
+}
+
 .cards::-webkit-scrollbar {
-    height: 4px;            
-  }
-  
-  .cards::-webkit-scrollbar-track {
-    background: transparent; 
-  }
-  
-  .cards::-webkit-scrollbar-thumb {
-    background: #555;       
-    border-radius: 4px;     
-  }
-  
+    height: 4px;
+}
+
+.cards::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
 
 @media screen and (max-width:1400px) {
-    .cards{
+    .cards {
         gap: 0.5rem;
     }
-    .cards .card{
-        
-        flex: 0 0  auto;
+
+    .cards .card {
+
+        flex: 0 0 auto;
     }
-    
+
 }
 
 @media screen and (max-width:390px) {
-    .cards{
+    .cards {
         gap: 0.5rem;
     }
-    .cards .card{
-        
-        flex: 0 0  auto;
+
+    .cards .card {
+
+        flex: 0 0 auto;
     }
-    
+
 }
+
 @media screen and (max-width:389px) {
-    .cards{
+    .cards {
         gap: 0.5rem;
     }
-    .cards .card{
-        
-        flex: 0 0  90%;
+
+    .cards .card {
+
+        flex: 0 0 90%;
     }
-    
+
 }
-  
-.cards .card img{
+
+.cards .card img {
     background-color: var(--secondaryColor);
 }
 
-.cards .card p{
+.cards .card p {
     color: var(--orange-text);
 }

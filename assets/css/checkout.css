@@ -1,19 +1,19 @@
 :root {
-    --primaryColor: #000000;
-    --text-color: #fff;
-    --secondaryColor: #E4E4E7;
-    --blue-200: #93C5FD;
-    --text-secondary: #A1A1AA;
-    --mainFont: "Plus Jakarta Sans", sans-serif;
-  --orange-text:#FB923C;
+  --primaryColor: #000000;
+  --text-color: #fff;
+  --secondaryColor: #E4E4E7;
+  --blue-200: #93C5FD;
+  --text-secondary: #A1A1AA;
+  --mainFont: "Plus Jakarta Sans", sans-serif;
+  --orange-text: #FB923C;
 }
 
 
 .card-total p {
-    margin-bottom: 0.25rem; 
-  }
-  
-  .card-total .border-bottom {
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.3rem; 
-  }
+  margin-bottom: 0.25rem;
+}
+
+.card-total .border-bottom {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
+}
