@@ -19,7 +19,28 @@ h1 {
   font-size: 50px;
 
 }
-
+.faqs-hero {
+  padding-left: 3rem;
+}
+.faqs-hero a{
+  font-size: 16px;
+}
+@media screen and (max-width:900px) {
+  .faqs-hero h1{
+font-size: 35px;
+}
+.faqs-hero{
+  padding-left: 1rem ;
+}
+}
+@media screen and (max-width:580px) {
+  .faqs-hero h1{
+font-size: 30px;
+}
+.faqs-hero a,.btn-outline-dark .breadcrumb, .btn-outline-dark .breadcrumb a, .btn-outline-dark .breadcrumb-item, .btn-outline-dark .breadcrumb-item::before {
+  font-size: 14px;
+}
+}
 .btn-outline-dark:hover .btn-outline-dark .breadcrumb,
 .btn-outline-dark .breadcrumb a,
 .btn-outline-dark .breadcrumb-item,

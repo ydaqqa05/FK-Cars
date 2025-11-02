@@ -22,7 +22,9 @@
     --lime-400: #84CC16;
     --teal-600: #0F766E;
 }
-
+.card-body .btn {
+    --bs-btn-font-size: 0.8rem;
+}
 .btn .breadcrumb,
 .btn .breadcrumb a,
 .btn .breadcrumb-item,
@@ -240,6 +242,12 @@ span {
     .car-info {
         font-size: 10px;
     }
+    .card-body h5{
+        font-size: 15px;
+    }
+    .card-body .btn{
+        font-size: 0.6rem;
+    }
 }
 
 @media screen and (max-width:433px) {
@@ -250,10 +258,15 @@ span {
 
 @media screen and (max-width:413px) {
     .car-info {
-        font-size: 8px;
+        font-size: 9px;
     }
 }
-
+@media (min-width: 768px) {
+    .custom-cards .col {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
 @media (min-width: 390px) and (max-width: 767px) {
     .custom-cards .col {
         flex: 0 0 50%;
@@ -261,12 +274,18 @@ span {
     }
 }
 
-@media (min-width: 768px) {
-    .custom-cards .col {
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%;
+@media screen and (max-width:390px) {
+    .car-info {
+        font-size: 15px;
+    }
+    .card-body h5{
+        font-size: 20px;
+    }
+    .card-body .btn{
+        font-size: 1rem;
     }
 }
+
 
 .pages .btn {
     padding-left: 24px;
